@@ -1,1 +1,0 @@
-tu par la phala
